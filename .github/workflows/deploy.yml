@@ -20,15 +20,6 @@ jobs:
           hugo-version: '0.111.3'
           extended: true
 
-      - name: Set up Python
-        uses: actions/setup-python@v4
-        with:
-          python-version: '3.10'
-
-      - name: Install dependencies
-        run: |
-          pip install -r requirements.txt
-
       - name: Build Hugo site
         run: hugo --minify
 
@@ -40,25 +31,4 @@ jobs:
           projectName: your-project-name
           directory: public
           branch: main
-          wranglerVersion: 'latest'
-
-      - name: Configure AWS CLI for R2
-        run: |
-          aws configure set aws_access_key_id ${{ secrets.R2_ACCESS_KEY }}
-          aws configure set aws_secret_access_key ${{ secrets.R2_SECRET_KEY }}
-          aws configure set default.region us-east-1
-
-      - name: Upload videos to R2
-        run: |
-          bash scripts/upload_videos.sh
-        env:
-          R2_BUCKET: ${{ secrets.R2_BUCKET }}
-          R2_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          R2_CDN_DOMAIN: ${{ secrets.R2_CDN_DOMAIN }}
-
-      - name: Update video links
-        run: |
-          python scripts/replace_video_links.py
-        env:
-          R2_CDN_DOMAIN: ${{ secrets.R2_CDN_DOMAIN }}
 
