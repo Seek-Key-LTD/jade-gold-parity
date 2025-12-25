@@ -1,0 +1,227 @@
+name: Hugo Build and Deploy
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pull-requests: write
+    outputs:
+      hugo-output: ${{ steps.build.outputs.path }}
+    
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
+
+    - name: Setup Hugo
+      uses: peaceiris/actions-hugo@v2
+      with:
+        hugo-version: '0.120.0'
+        extended: true
+
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '18'
+        cache: 'npm'
+
+    - name: Install dependencies (if needed)
+      run: |
+        if [ -f "package.json" ]; then
+          npm ci
+        fi
+
+    - name: Build website
+      id: build
+      run: |
+        hugo --minify --verbose
+        echo "hugo-output=public" >> $GITHUB_OUTPUT
+        
+        # 检查构建结果
+        echo "📁 构建文件列表："
+        find public -type f | head -20
+        
+        echo "📊 构建统计："
+        echo "文件数量: $(find public -type f | wc -l)"
+        echo "总大小: $(du -sh public | cut -f1)"
+
+    - name: Upload build artifacts
+      uses: actions/upload-artifact@v3
+      with:
+        name: hugo-output
+        path: public/
+        retention-days: 1
+
+    - name: Archive build output
+      run: |
+        tar -czf hugo-build.tar.gz public/
+        echo "📦 构建文件已打包: hugo-build.tar.gz"
+
+    - name: Upload archive
+      uses: actions/upload-artifact@v3
+      with:
+        name: hugo-archive
+        path: hugo-build.tar.gz
+        retention-days: 1
+
+  deploy-pages:
+    needs: build
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main'
+    permissions:
+      pages: write
+      id-token: write
+    
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    
+    steps:
+    - name: Download build artifacts
+      uses: actions/download-artifact@v3
+      with:
+        name: hugo-output
+        path: public
+
+    - name: Setup Pages
+      uses: actions/configure-pages@v3
+
+    - name: Upload to GitHub Pages
+      uses: actions/upload-pages-artifact@v2
+      with:
+        path: public
+        retention-days: 30
+
+    - name: Deploy to GitHub Pages
+      id: deployment
+      uses: actions/deploy-pages@v2
+
+  deploy-cloudflare:
+    needs: build
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main'
+    permissions:
+      contents: read
+    
+    steps:
+    - name: Download build artifacts
+      uses: actions/download-artifact@v3
+      with:
+        name: hugo-output
+        path: public
+
+    - name: Deploy to Cloudflare Pages
+      id: cf-deploy
+      uses: cloudflare/pages-action@v1
+      with:
+        apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+        accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        projectName: ${{ secrets.CLOUDFLARE_PROJECT_NAME || 'muyueji' }}
+        directory: public
+        gitHubToken: ${{ secrets.GITHUB_TOKEN }}
+        # 禁用 Wrangler，使用直接上传
+        wranglerVersion: '3'
+
+    - name: Cloudflare Pages Output
+      run: |
+        echo "🌐 Cloudflare Pages 部署信息："
+        echo "项目名称: ${{ secrets.CLOUDFLARE_PROJECT_NAME || 'muyueji' }}"
+        echo "账户ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}"
+        if [ "${{ steps.cf-deploy.outputs.url }}" != "" ]; then
+          echo "部署URL: ${{ steps.cf-deploy.outputs.url }}"
+        fi
+        echo "部署时间: $(date -u)"
+
+  deploy-video-r2:
+    runs-on: ubuntu-latest
+    needs: build
+    if: github.ref == 'refs/heads/main'
+    permissions:
+      contents: read
+    
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v4
+
+    - name: Setup AWS CLI
+      run: |
+        curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+        unzip awscliv2.zip
+        sudo ./aws/install
+        aws configure set aws_access_key_id ${{ secrets.R2_ACCESS_KEY }}
+        aws configure set aws_secret_access_key ${{ secrets.R2_SECRET_KEY }}
+        aws configure set default.region auto
+
+    - name: Upload videos to R2
+      env:
+        R2_ENDPOINT: https://${{ secrets.CLOUDFLARE_ACCOUNT_ID }}.r2.cloudflarestorage.com
+      run: |
+        if [ -d "static/videos" ] && [ "$(ls -A static/videos)" ]; then
+          echo "🎬 发现视频文件，开始上传到 R2..."
+          
+          # 创建映射文件
+          echo "# 视频文件映射" > video_url_mapping.txt
+          
+          # 遍历视频文件并上传
+          find static/videos -type f \( -name "*.mp4" -o -name "*.webm" -o -name "*.mov" -o -name "*.avi" -o -name "*.mkv" \) | while read video_file; do
+            relative_path=${video_file#static/videos/}
+            
+            echo "📤 上传: $relative_path"
+            
+            # 上传到 R2
+            if aws s3 cp "$video_file" "s3://${{ secrets.R2_BUCKET }}/videos/$relative_path" \
+                --endpoint-url "$R2_ENDPOINT" \
+                --no-progress; then
+              
+              # 记录映射关系
+              cdn_url="${{ secrets.R2_CDN_DOMAIN }}/videos/$relative_path"
+              echo "$relative_path|$cdn_url" >> video_url_mapping.txt
+              echo "✅ 上传成功: $relative_path"
+            else
+              echo "❌ 上传失败: $relative_path"
+            fi
+          done
+          
+          echo "📋 视频映射文件："
+          cat video_url_mapping.txt
+        else
+          echo "📹 没有找到视频文件，跳过上传"
+        fi
+
+    - name: Update video links (if videos uploaded)
+      if: success()
+      run: |
+        if [ -f "video_url_mapping.txt" ] && [ -s "video_url_mapping.txt" ]; then
+          echo "🔄 更新文章中的视频链接..."
+          python3 scripts/replace_video_links.py
+        else
+          echo "⏭️ 没有视频映射文件，跳过链接更新"
+        fi
+
+  status-check:
+    needs: [build, deploy-cloudflare, deploy-video-r2]
+    runs-on: ubuntu-latest
+    if: always()
+    
+    steps:
+    - name: Check deployment status
+      run: |
+        echo "📊 部署状态总结："
+        echo "🏗️  Hugo 构建: ${{ needs.build.result }}"
+        echo "☁️  Cloudflare Pages: ${{ needs.deploy-cloudflare.result }}"
+        echo "📹  视频上传: ${{ needs.deploy-video-r2.result }}"
+        
+        if [[ "${{ needs.build.result }}" == "success" && ("${{ needs.deploy-cloudflare.result }}" == "success" || "${{ needs.deploy-cloudflare.result }}" == "skipped") ]]; then
+          echo "✅ 部署成功完成！"
+        else
+          echo "❌ 部署过程中出现问题"
+          exit 1
+        fi

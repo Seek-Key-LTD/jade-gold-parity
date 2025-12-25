@@ -1,18 +1,22 @@
 {
-  "name": "arxiv",
+  "name": "muyueji-hugo",
   "version": "1.0.0",
-  "description": "玉金等价：牧月记三部曲",
+  "description": "玉金等价：牧月记三部曲 - Hugo 网站项目",
+  "main": "index.js",
   "scripts": {
-    "build": "hugo --minify"
+    "build": "hugo --minify",
+    "server": "hugo server -D",
+    "deploy": "hugo --minify && echo 'Build complete. Use GitHub Actions for deployment.'"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Seek-Key-LTD/jade-gold-parity.git"
-  },
+  "keywords": [
+    "hugo",
+    "academic",
+    "chinese",
+    "research",
+    "牧月记"
+  ],
   "author": "Seek Key LTD",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/Seek-Key-LTD/jade-gold-parity/issues"
-  },
-  "homepage": "https://github.com/Seek-Key-LTD/jade-gold-parity#readme"
+  "license": "Proprietary",
+  "devDependencies": {},
+  "dependencies": {}
 }
