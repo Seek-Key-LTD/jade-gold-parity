@@ -1,0 +1,68 @@
+baseURL: 'https://muyueji.pages.dev'
+languageCode: 'zh-cn'
+title: '玉金等价：牧月记三部曲'
+theme: 'academic'
+
+# 菜单配置
+menu:
+  main:
+    - name: '天卷'
+      url: '/tian/'
+      weight: 10
+    - name: '地卷'
+      url: '/di/'
+      weight: 20
+    - name: '人卷'
+      url: '/ren/'
+      weight: 30
+
+# 网站参数
+params:
+  author: 'Seek Key LTD'
+  description: '从史前文明到现代社会的演化规律，涵盖技术、地理、人文三个维度'
+  keywords: ['天体物理', '地质学', '文明演化', '亚特兰蒂斯', '象雄文明', '黑洞信息']
+  math: true
+  mermaid: true
+  comments:
+    enabled: true
+    provider: 'github'
+
+# Markdown 配置
+markup:
+  goldmark:
+    renderer:
+      unsafe: true  # 允许 HTML 标签
+  highlight:
+    style: 'github'
+    lineNos: true
+  tableOfContents:
+    startLevel: 2
+    endLevel: 6
+
+# 分类和标签
+taxonomies:
+  tag: 'tags'
+  category: 'categories'
+
+# 输出格式
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+  page:
+    - HTML
+  section:
+    - HTML
+    - RSS
+
+# 媒体类型
+mediaTypes:
+  application/manifest+json:
+    suffixes: ['webmanifest']
+
+# 输出格式
+outputFormats:
+  WebAppManifest:
+    mediaType: application/manifest+json
+    rel: manifest

@@ -1,0 +1,62 @@
+# 原始文档 - 不推送到公开仓库
+# 保护您的原创研究内容不被意外公开
+mulanji/
+murenji/
+muyueji/
+
+# 临时文件和日志
+uploads_*.log
+video_url_mapping.txt
+video_embeds.md
+
+# Hugo 相关
+public/
+resources/
+.hugo_build.lock
+
+# 私有配置文件
+.env
+*-secrets.yml
+secrets.yml
+
+# 系统文件
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# 备份文件
+*.bak
+*.backup
+
+# 临时脚本
+temp_*.sh
+temp_*.py
+
+# 日志文件
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# 依赖目录
+node_modules/
+
+# Python 缓存
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+
+# 环境变量文件
+.env.local
+.env.development
+.env.test
+.env.production
