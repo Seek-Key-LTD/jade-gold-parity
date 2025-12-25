@@ -10,7 +10,7 @@ video_url_mapping.txt
 video_embeds.md
 
 # Hugo 相关
-public/
+# public/  # Cloudflare Pages需要这个目录来部署
 resources/
 .hugo_build.lock
 hugo
