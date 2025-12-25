@@ -13,6 +13,9 @@ video_embeds.md
 public/
 resources/
 .hugo_build.lock
+hugo
+hugo_extended_*.tar.gz
+hugo_*_linux-amd64.tar.gz
 
 # 私有配置文件
 .env
