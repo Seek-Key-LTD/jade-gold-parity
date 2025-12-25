@@ -1,0 +1,100 @@
+{{ define "main" }}
+
+<div class="terms-content">
+  <h1>{{ .Title }}</h1>
+  
+  {{ if .Content }}
+  <div class="description">
+    {{ .Content }}
+  </div>
+  {{ end }}
+
+  <div class="terms-grid">
+    {{ $type := .Type }}
+    {{ range .Data.Terms }}
+    <div class="term-card">
+      <h2><a href="{{ .Page.RelPermalink }}">{{ .Page.Title }}</a></h2>
+      <div class="term-count">{{ len .Pages }} 篇文章</div>
+    </div>
+    {{ end }}
+  </div>
+</div>
+
+<style>
+  .terms-content {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+  }
+
+  .terms-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    border-bottom: 2px solid var(--border-color);
+    padding-bottom: 1rem;
+  }
+
+  .description {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    margin-bottom: 3rem;
+    background: var(--quote-bg);
+    padding: 2rem;
+    border-radius: 8px;
+  }
+
+  .terms-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+  }
+
+  .term-card {
+    background: white;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 1.5rem;
+    transition: all 0.3s ease;
+  }
+
+  .term-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+
+  .term-card h2 {
+    margin: 0 0 0.5rem 0;
+    font-size: 1.3rem;
+  }
+
+  .term-card h2 a {
+    color: var(--text-color);
+    text-decoration: none;
+  }
+
+  .term-card h2 a:hover {
+    color: var(--primary-color);
+  }
+
+  .term-count {
+    color: #6b7280;
+    font-size: 0.9rem;
+  }
+
+  @media (max-width: 768px) {
+    .terms-content {
+      padding: 1rem;
+    }
+    
+    .terms-grid {
+      grid-template-columns: 1fr;
+      gap: 1rem;
+    }
+    
+    .term-card {
+      padding: 1rem;
+    }
+  }
+</style>
+
+{{ end }}
