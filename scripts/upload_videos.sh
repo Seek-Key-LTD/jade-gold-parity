@@ -5,18 +5,18 @@
 
 set -e
 
-# 配置信息 - 需要您填入实际的值
-R2_BUCKET="your-bucket-name"
-R2_ACCOUNT_ID="your-account-id"
-R2_ACCESS_KEY="your-access-key"
-R2_SECRET_KEY="your-secret-key"
+# 配置信息 - 从环境变量获取，或使用默认值
+R2_BUCKET=${R2_BUCKET:-"your-bucket-name"}
+R2_ACCOUNT_ID=${R2_ACCOUNT_ID:-"your-account-id"}
+R2_ACCESS_KEY=${R2_ACCESS_KEY:-"your-access-key"}
+R2_SECRET_KEY=${R2_SECRET_KEY:-"your-secret-key"}
 R2_ENDPOINT="https://${R2_ACCOUNT_ID}.r2.cloudflarestorage.com"
 
 # 视频目录 (默认为 static/videos)
 VIDEO_DIR=${1:-"static/videos"}
 
 # 公共访问域名 (需要配置 R2 自定义域名)
-PUBLIC_DOMAIN="https://your-cdn-domain.com"
+PUBLIC_DOMAIN=${R2_CDN_DOMAIN:-"https://your-cdn-domain.com"}
 
 # 颜色输出
 GREEN='\033[0;32m'
