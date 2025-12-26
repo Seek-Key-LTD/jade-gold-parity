@@ -1,0 +1,90 @@
+baseURL: 'https://parity.seekkey.tech'
+languageCode: 'zh-cn'
+title: '金玉平价论--天地人三部曲'
+theme: 'book'
+
+# 菜单配置
+menu:
+  main:
+    - name: '天卷'
+      url: '/tian/'
+      weight: 10
+    - name: '地卷'
+      url: '/di/'
+      weight: 20
+    - name: '人卷'
+      url: '/ren/'
+      weight: 30
+    - name: '文明绞杀'
+      url: '/civilization-cleansing/'
+      weight: 40
+
+# 网站参数
+params:
+  author: '徐厚重'
+  description: '金玉平价论：从宇宙物理到文明演化的跨学科研究'
+  keywords: ['文明研究', '考古政治学', '冲突地理学', '文明绞杀学']
+  
+  # Book theme 配置
+  BookTheme: 'auto'
+  BookToC: true
+  BookMenuBundle: /menu
+  BookSection: '*'
+  BookSearch: true
+  BookComments: true
+  
+  # 自定义样式
+  customCSS: ['css/custom.css']
+  customJS: ['js/conflict-map.js', 'js/evidence-db.js']
+
+  # 文明冲突数据
+  conflictData:
+    enabled: true
+    mapProvider: 'leaflet'
+    dataEndpoint: '/api/conflict-data.json'
+
+# Markdown 配置
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+  highlight:
+    style: 'github'
+    lineNos: true
+  tableOfContents:
+    startLevel: 2
+    endLevel: 6
+
+# 分类和标签
+taxonomies:
+  tag: 'tags'
+  category: 'categories'
+  region: 'regions'
+  civilization: 'civilizations'
+
+# 输出格式
+outputs:
+  home:
+    - HTML
+    - JSON
+    - RSS
+  page:
+    - HTML
+  section:
+    - HTML
+    - JSON
+
+# 媒体类型
+mediaTypes:
+  application/manifest+json:
+    suffixes: ['webmanifest']
+
+# 输出格式
+outputFormats:
+  WebAppManifest:
+    mediaType: application/manifest+json
+    rel: manifest
+  ConflictData:
+    mediaType: application/json
+    baseName: 'conflict-data'
+    isPlainText: true

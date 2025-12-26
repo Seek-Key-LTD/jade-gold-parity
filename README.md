@@ -1,290 +1,190 @@
-[bep]: https://github.com/bep
-[bugs]: https://github.com/gohugoio/hugo/issues?q=is%3Aopen+is%3Aissue+label%3ABug
-[contributing]: CONTRIBUTING.md
-[create a proposal]: https://github.com/gohugoio/hugo/issues/new?labels=Proposal%2C+NeedsTriage&template=feature_request.md
-[documentation repository]: https://github.com/gohugoio/hugoDocs
-[documentation]: https://gohugo.io/documentation
-[dragonfly bsd, freebsd, netbsd, and openbsd]: https://gohugo.io/installation/bsd
-[forum]: https://discourse.gohugo.io
-[friends]: https://github.com/gohugoio/hugo/graphs/contributors
-[go]: https://go.dev/
-[hugo modules]: https://gohugo.io/hugo-modules/
-[installation]: https://gohugo.io/installation
-[issue queue]: https://github.com/gohugoio/hugo/issues
-[linux]: https://gohugo.io/installation/linux
-[macos]: https://gohugo.io/installation/macos
-[prebuilt binary]: https://github.com/gohugoio/hugo/releases/latest
-[requesting help]: https://discourse.gohugo.io/t/requesting-help/9132
-[spf13]: https://github.com/spf13
-[static site generator]: https://en.wikipedia.org/wiki/Static_site_generator
-[support]: https://discourse.gohugo.io
-[themes]: https://themes.gohugo.io/
-[twitter]: https://twitter.com/gohugoio
-[website]: https://gohugo.io
-[windows]: https://gohugo.io/installation/windows
+# 金玉平价论--天地人三部曲
 
-<a href="https://gohugo.io/"><img src="https://raw.githubusercontent.com/gohugoio/gohugoioTheme/master/static/images/hugo-logo-wide.svg?sanitize=true" alt="Hugo" width="565"></a>
+**作者：徐厚重**
 
-A fast and flexible static site generator built with love by [bep], [spf13], and [friends] in [Go].
+## 作品简介
+
+《金玉平价论》是一部突破传统学科边界的文明研究巨著，分为天、地、人三卷，从宇宙物理到地球演化，再到人类文明发展，构建了完整的文明演化分析框架。本作品最重大的发现是：**近50年来东半球90%以上的武装冲突，实为针对"非白人文明多元起源"证据的系统性清除——一场持续46年的"文明脑前叶切除术"。**
+
+通过对喀布尔、巴格达、帕尔米拉、耶路撒冷、巴尔干-北高加索等文明枢纽的深度分析，揭露了"高加索单一叙事"持有者如何通过精准轰炸、定向盗掠、制造混乱等手段，系统性地毁灭那些能挑战其文明正统性的硬核证据。这不仅是地缘博弈，更是一场争夺"谁是文明真老大"的叙事战争。
+
+## 内容结构
+
+### 1. 天卷：技术篇
+探讨黑洞信息悖论、引力熵、克尔黑洞对角化等前沿物理问题，挑战传统星云假说，提出三元合并模型。
+
+**核心观点：**
+- 质疑星云说的角动量分布问题
+- 提出三星并合（Ternary Merger）模型解释太阳系形成
+- 分析太阳较差自转与11年磁周期的三体遗产
+- 重新解读小行星带的形成机制
+
+### 2. 地卷：地球液压传动系统
+提出"地球液压传动系统"理论，批判传统水循环/大陆漂移学说，分析文明演化规律。
+
+**核心观点：**
+- 地幔过渡带林伍德石存储3倍海洋水量
+- 月球引力与板块运动构成地球的液压系统
+- 大陆漂移的零摩擦层机制
+- 重新思考亚特兰蒂斯的位置与后代族群
+- 鄂霍次克海生态位与渔猎文明的能量优势
+
+### 3. 人卷：文明演化的止血机制
+分析海市蜃楼现象、紫色染料文化'出口-再进口'模式、魏晋玄学思潮，批判西方线性分类法，探讨文明演化的止血机制。
+
+**核心观点：**
+- 传国玉玺作为华夏文明的"止血石"作用
+- 辽宋和平与五代十国战乱的玉玺效应对比
+- 玉玺的"第零次分配"确定性载体本质
+- 玉德作为诚信的隐性契约
+- 正统认同与文明稳定的关系
+
+### 4. 人卷续：文明的脑前叶切除术——世界岛焦土上的46年记忆清洗
+
+**震撼发现：1975-2025年间，全球90.8%的武装冲突集中在东半球文明核心区，绝非偶然地缘博弈，而是对"非白人文明多元起源"证据的系统性清除。**
+
+#### 被毁灭的文明枢纽：世界岛核心区的千年遗址轨迹
+
+**一、喀布尔：2500年巴克特利亚文明的"大夏密码"湮灭于双重轰炸**
+- 苏联1979年入侵与美军2001年战争，地毯式轰炸普勒胡姆里大夏城堡遗址
+- 2001年巴米扬大佛定向爆破，37米和55米大佛瞬间崩塌
+- 黄金之丘遗址成为地雷区，考古工作彻底停滞
+
+**二、巴格达：6000年苏美尔文明的"泥板密码"在战火中失窃**
+- 1991年海湾战争波及巴比伦古城，苏美尔地层逻辑错乱
+- 2003年伊拉克战争期间，巴格达国家博物馆48小时大规模盗掠
+- 3000多块苏美尔泥板失窃，记载早于希腊文明的哲学思想与政治制度
+
+**三、帕尔米拉：2000年罗马东方文明的"石柱密码"被定向爆破**
+- ISIS精准避开金银装饰，专门针对铭文、雕塑等"文明证据"
+- 贝尔神庙、凯旋门、柱廊被系统化爆破
+- 证明"文明多点交融"的多文化痕迹被彻底抹去
+
+**四、耶路撒冷：3000年宗教文明的"圣地密码"在冲突中承压**
+- 大卫城遗址考古工作因军事冲突被迫中断
+- 武装分子在遗址内挖掘战壕，切断文明时间线
+- 三大宗教圣地面临持续炮火威胁
+
+**五、巴尔干-北高加索：3000年文明交汇带的"圣火密码"遭俄美绞杀**
+- 车臣战争、达吉斯坦冲突、南奥赛梯战争，俄罗斯系统性破坏圣火祠遗址
+- 拜火教火山圣火崇拜源头被刻意掩盖，挑战俄罗斯"第三罗马"叙事
+- 波斯-巴尔干-中亚文明传播链证据被摧毁
+
+**六、阿塞拜疆：全球火山最密集之地的"拜火源头密码"遭地缘博弈碾压**
+- 2020年纳卡冲突中，舒沙古城拜火教圣火祠被炸毁
+- 泥火山群考古观测站被炸毁，火山岩刻痕研究停滞
+- 拜火教文明源于阿塞拜疆的证据被永久封锁
+
+#### 高危目标预警：谁将是下一个"怀璧其罪者"
+
+**一、利比亚·昔兰尼加（含班加西）——地中海文明"非白人源头"的最后屏障**
+- 柏柏尔人、腓尼基人文明证据威胁"希腊文明唯一源头"叙事
+- 西方可再次以"人道主义"为名，精准轰炸昔兰古城
+
+**二、乌兹别克斯坦·撒马尔罕——"昆仑-夏"文明关联的最后关键节点**
+- 粟特文明与夏文明交流证据，若证实将打破"文明起源于高加索"谎言
+- 美俄可能通过代理人战争制造混乱，阻止考古发掘
+
+**三、格鲁吉亚·第比利斯——高加索文明"多元交融"的最后见证**
+- 波斯文明、本土文明证据挑战俄罗斯"第三罗马"叙事
+- 俄罗斯可能以"保护俄裔"为名再次制造冲突
+
+#### 数据实证：文明的系统性绞杀
+
+**冲突分布统计：**
+- 近50年全球重大武装冲突87起，东半球79起（90.8%）
+- 中东23起、中亚-高加索18起、非洲27起、南亚11起
+- 东半球长期冲突32起，占全球94.1%
+- 文明遗产损毁95%以上集中在东半球
+
+**毁灭手法高度一致：**
+1. **精准打击**：专门针对铭文、泥板、雕塑等文明证据
+2. **纵容盗掘**：利用混乱让关键文物"消失"在西方私人收藏中
+3. **制造禁区**：通过长期战乱阻止考古工作继续
+4. **颜色革命**：借"民主转型"摧毁监管体系（如2011年埃及革命后盗挖坑激增111%）
+
+#### 核心论点：焦土背后的魔鬼
+
+**他们怕，怕真相：**
+- 怕苏美尔泥板证明两河流域文明早于西方文明
+- 怕巴米扬大佛证明文明的跨地域交融  
+- 怕帕尔米拉铭文打破"西方文明单一扩散"的谎言
+- 怕耶路撒冷遗址证明文明的多元共存
+- 怕拜火教圣火证明文明的多元起源而非白人专属
+
+**深层逻辑：**
+通过持续战争制造"考古禁区"，用混乱掩盖文明痕迹，用盗掠让证据消失——这就是高加索单一叙事持有者为了争夺文明主导权，不惜摧毁人类共同文明遗产的终极真相。
+
+#### 学术创新与预警价值
+
+**首创学科领域：**
+- **文明绞杀学**：建立"文明证据定向清除"分析框架
+- **冲突地理学**：武装分布与文明遗址关联模型
+- **考古政治学**：揭示地缘博弈背后的文明叙事战争
+
+**预警机制：**
+建立高危文明遗址风险评估体系，为国际社会提供文明保护的早期预警，阻止"多元证据链"被继续摧毁。
+
+## 学术特点与创新
+
+1. **文明绞杀学**：首创"文明证据定向清除"分析框架，揭示武装冲突与文明毁灭的深层关联
+2. **冲突地理学**：建立武装分布与文明遗址关联模型，用数据证明冲突的文明针对性
+3. **考古政治学**：揭示地缘博弈背后的文明叙事战争，分析"单一叙事"的证据清除机制
+4. **跨学科融合**：整合物理学、地质学、考古学、政治学、国际关系等多领域知识
+5. **预警机制**：建立高危文明遗址风险评估体系，提供文明保护的早期预警
+6. **范式突破**：打破"西方中心论"，重构文明史叙事，守护文明多元性真相
+7. **数据支撑**：基于ACLED/UCDP冲突数据库、卫星图像分析、考古报告对比等实证研究
+
+## 当代价值与警示
+
+### 学术意义
+- **重构文明史叙事**：打破"高加索白人单一起源"霸权，还原文明多元交融真相
+- **创建文明保护学科**：建立系统性的文明威胁识别与应对机制
+- **促进文明平等对话**：基于证据实现真正平等的文明交流范式
+
+### 现实警示
+- **文明遗址保护**：识别利比亚昔兰尼加、乌兹别克斯坦撒马尔罕、格鲁吉亚第比利斯等高危目标
+- **地缘分析新视角**：从文明证据角度理解国际冲突，洞察"人道主义"背后的文明动机
+- **文化安全意识**：认识到文物背后的文明主权意义，觉醒文明守护责任
+
+### 目标读者
+1. **文明研究者**：考古学、历史学、人类学学者
+2. **国际关系专家**：地缘政治、冲突研究、战略分析人员  
+3. **文化遗产保护者**：博物馆、考古机构、文物修复专家
+4. **公共政策制定者**：文化外交、文物保护、国际安全决策者
+5. **深度思考者**：对文明真相、历史正义感兴趣的知识分子
+
+## 核心贡献
+
+通过《金玉平价论》，读者将获得：
+- **全新的地缘政治分析框架**：理解国际冲突背后的文明叙事战争
+- **文明证据的系统性认知**：识别哪些文明证据正面临威胁，如何保护
+- **历史真相的守护意识**：认识到每个被毁灭的文物都是人类共同财富的损失
+- **跨文明对话的基础**：基于多元证据重建真正平等的人类文明史
+
+**文明真相不容篡改，多元证据必须守护。**
+
+## 数字平台特色
+
+本网站采用Hugo静态网站生成器构建，专为文明研究与证据保护设计，具备以下特色功能：
+
+- **文明冲突地图**：可视化展示46年来文明遗址被毁的地理分布与时间线
+- **证据数据库**：提供被毁文物清单、遗址现状追踪、高危目标预警
+- **实时监控**：持续监控全球文明遗址安全状况，发布威胁预警
+- **交互分析**：文明关联网络图、冲突模式可视化、证据链重建工具
+- **学术资源**：整合考古报告、冲突数据、卫星图像等多源证据
+- **协作平台**：为全球学者提供文明证据保护的研究交流空间
+
+通过这个数字平台，研究者可以：
+- 追踪"文明绞杀"的最新动态
+- 参与文明证据的保护行动
+- 共享威胁预警信息与研究资源
+- 推动文明多元性真相的全球认知
+
+**技术支持**：本平台支持Markdown格式编写内容、数学公式渲染、Mermaid流程图等多种学术表现形式，为深度研究提供技术支撑。
 
 ---
 
-[![GoDoc](https://godoc.org/github.com/gohugoio/hugo?status.svg)](https://godoc.org/github.com/gohugoio/hugo)
-[![Tests on Linux, MacOS and Windows](https://github.com/gohugoio/hugo/workflows/Test/badge.svg)](https://github.com/gohugoio/hugo/actions?query=workflow%3ATest)
-[![Go Report Card](https://goreportcard.com/badge/github.com/gohugoio/hugo)](https://goreportcard.com/report/github.com/gohugoio/hugo)
+**© Seek Key LTD**
 
-[Website] | [Installation] | [Documentation] | [Support] | [Contributing] | <a rel="me" href="https://fosstodon.org/@gohugoio">Mastodon</a>
-
-## Overview
-
-Hugo is a [static site generator] written in [Go], optimized for speed and designed for flexibility. With its advanced templating system and fast asset pipelines, Hugo renders a complete site in seconds, often less.
-
-Due to its flexible framework, multilingual support, and powerful taxonomy system, Hugo is widely used to create:
-
-- Corporate, government, nonprofit, education, news, event, and project sites
-- Documentation sites
-- Image portfolios
-- Landing pages
-- Business, professional, and personal blogs
-- Resumes and CVs
-
-Use Hugo's embedded web server during development to instantly see changes to content, structure, behavior, and presentation. Then deploy the site to your host, or push changes to your Git provider for automated builds and deployment.
-
-Hugo's fast asset pipelines include:
-
-- CSS bundling &ndash; transpilation (Sass), tree shaking, minification, source maps, SRI hashing, and PostCSS integration
-- JavaScript bundling &ndash; transpilation (TypeScript, JSX), tree shaking, minification, source maps, and SRI hashing
-- Image processing &ndash; convert, resize, crop, rotate,  adjust colors, apply filters, overlay text and images, and extract EXIF data
-
-And with [Hugo Modules], you can share content, assets, data, translations, themes, templates, and configuration with other projects via public or private Git repositories.
-
-## Sponsors
-
-<p>&nbsp;</p>
-<p float="left">
-  <a href="https://www.linode.com/?utm_campaign=hugosponsor&utm_medium=banner&utm_source=hugogithub" target="_blank"><img src="https://raw.githubusercontent.com/gohugoio/gohugoioTheme/master/assets/images/sponsors/linode-logo_standard_light_medium.png" width="200" alt="Linode"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  <a href="https://cloudcannon.com/hugo-cms/?utm_campaign=HugoSponsorship&utm_source=sponsor&utm_content=gohugo" target="_blank"><img src="https://raw.githubusercontent.com/gohugoio/gohugoioTheme/master/assets/images/sponsors/cloudcannon-blue.svg" width="220" alt="CloudCannon"></a>
-<p>&nbsp;</p>
-
-## Installation
-
-Install Hugo from a [prebuilt binary], package manager, or package repository. Please see the installation instructions for your operating system:
-
-- [macOS]
-- [Linux]
-- [Windows]
-- [DragonFly BSD, FreeBSD, NetBSD, and OpenBSD]
-
-## Build from source
-
-Hugo is available in two editions: standard and extended. With the extended edition you can:
-
-- Encode to the WebP format when processing images. You can decode WebP images with either edition.
-- Transpile Sass to CSS using the embedded LibSass transpiler. The extended edition is not required to use the Dart Sass transpiler.
-
-Prerequisites to build Hugo from source:
-
-- Standard edition: Go 1.19 or later
-- Extended edition: Go 1.19 or later, and GCC
-
-Build the standard edition:
-
-```text
-go install github.com/gohugoio/hugo@latest
-```
-
-Build the extended edition:
-
-```text
-CGO_ENABLED=1 go install -tags extended github.com/gohugoio/hugo@latest
-```
-
-## Documentation
-
-Hugo's [documentation] includes installation instructions, a quick start guide, conceptual explanations, reference information, and examples.
-
-Please submit documentation issues and pull requests to the [documentation repository].
-
-## Support
-
-Please **do not use the issue queue** for questions or troubleshooting. Unless you are certain that your issue is a software defect, use the [forum].
-
-Hugo’s [forum] is an active community of users and developers who answer questions, share knowledge, and provide examples. A quick search of over 20,000 topics will often answer your question. Please be sure to read about [requesting help] before asking your first question.
-
-## Contributing
-
-You can contribute to the Hugo project by:
-
-- Answering questions on the [forum]
-- Improving the [documentation]
-- Monitoring the [issue queue]
-- Creating or improving [themes]
-- Squashing [bugs]
-
-Please submit documentation issues and pull requests to the [documentation repository].
-
-If you have an idea for an enhancement or new feature, create a new topic on the [forum] in the "Feature" category. This will help you to:
-
-- Determine if the capability already exists
-- Measure interest
-- Refine the concept
-
-If there is sufficient interest, [create a proposal]. Do not submit a pull request until the project lead accepts the proposal.
-
-For a complete guide to contributing to Hugo, see the [Contribution Guide](CONTRIBUTING.md).
-
-## Dependencies
-
-Hugo stands on the shoulders of great open source libraries. Run `hugo env --logLevel info` to display a list of dependencies.
-
-<details>
-<summary>See current dependencies</summary>
-
-```text
-cloud.google.com/go/compute/metadata="v0.2.3"
-cloud.google.com/go/iam="v1.1.0"
-cloud.google.com/go/storage="v1.30.1"
-cloud.google.com/go="v0.110.2"
-github.com/Azure/azure-sdk-for-go/sdk/azcore="v1.6.1"
-github.com/Azure/azure-sdk-for-go/sdk/azidentity="v1.3.0"
-github.com/Azure/azure-sdk-for-go/sdk/internal="v1.3.0"
-github.com/Azure/azure-sdk-for-go/sdk/storage/azblob="v1.0.0"
-github.com/Azure/go-autorest/autorest/to="v0.4.0"
-github.com/AzureAD/microsoft-authentication-library-for-go="v1.0.0"
-github.com/BurntSushi/locker="v0.0.0-20171006230638-a6e239ea1c69"
-github.com/PuerkitoBio/purell="v1.1.1"
-github.com/PuerkitoBio/urlesc="v0.0.0-20170810143723-de5bf2ad4578"
-github.com/alecthomas/chroma/v2="v2.7.0"
-github.com/armon/go-radix="v1.0.0"
-github.com/aws/aws-sdk-go-v2/aws/protocol/eventstream="v1.4.10"
-github.com/aws/aws-sdk-go-v2/config="v1.18.27"
-github.com/aws/aws-sdk-go-v2/credentials="v1.13.26"
-github.com/aws/aws-sdk-go-v2/feature/ec2/imds="v1.13.4"
-github.com/aws/aws-sdk-go-v2/feature/s3/manager="v1.11.70"
-github.com/aws/aws-sdk-go-v2/internal/configsources="v1.1.34"
-github.com/aws/aws-sdk-go-v2/internal/endpoints/v2="v2.4.28"
-github.com/aws/aws-sdk-go-v2/internal/ini="v1.3.35"
-github.com/aws/aws-sdk-go-v2/internal/v4a="v1.0.26"
-github.com/aws/aws-sdk-go-v2/service/internal/accept-encoding="v1.9.11"
-github.com/aws/aws-sdk-go-v2/service/internal/checksum="v1.1.29"
-github.com/aws/aws-sdk-go-v2/service/internal/presigned-url="v1.9.28"
-github.com/aws/aws-sdk-go-v2/service/internal/s3shared="v1.14.3"
-github.com/aws/aws-sdk-go-v2/service/s3="v1.35.0"
-github.com/aws/aws-sdk-go-v2/service/sso="v1.12.12"
-github.com/aws/aws-sdk-go-v2/service/ssooidc="v1.14.12"
-github.com/aws/aws-sdk-go-v2/service/sts="v1.19.2"
-github.com/aws/aws-sdk-go-v2="v1.18.1"
-github.com/aws/aws-sdk-go="v1.44.284"
-github.com/aws/smithy-go="v1.13.5"
-github.com/bep/clocks="v0.5.0"
-github.com/bep/debounce="v1.2.0"
-github.com/bep/gitmap="v1.1.2"
-github.com/bep/goat="v0.5.0"
-github.com/bep/godartsass/v2="v2.0.0"
-github.com/bep/godartsass="v1.2.0"
-github.com/bep/golibsass="v1.1.1"
-github.com/bep/gowebp="v0.2.0"
-github.com/bep/lazycache="v0.2.0"
-github.com/bep/logg="v0.2.0"
-github.com/bep/mclib="v1.20400.20402"
-github.com/bep/overlayfs="v0.6.0"
-github.com/bep/simplecobra="v0.3.2"
-github.com/bep/tmc="v0.5.1"
-github.com/clbanning/mxj/v2="v2.5.7"
-github.com/cli/safeexec="v1.0.1"
-github.com/cpuguy83/go-md2man/v2="v2.0.2"
-github.com/disintegration/gift="v1.2.1"
-github.com/dlclark/regexp2="v1.10.0"
-github.com/dustin/go-humanize="v1.0.1"
-github.com/evanw/esbuild="v0.18.5"
-github.com/fatih/color="v1.15.0"
-github.com/frankban/quicktest="v1.14.5"
-github.com/fsnotify/fsnotify="v1.6.0"
-github.com/getkin/kin-openapi="v0.118.0"
-github.com/ghodss/yaml="v1.0.0"
-github.com/go-openapi/jsonpointer="v0.19.6"
-github.com/go-openapi/swag="v0.22.3"
-github.com/gobuffalo/flect="v1.0.2"
-github.com/gobwas/glob="v0.2.3"
-github.com/gohugoio/go-i18n/v2="v2.1.3-0.20210430103248-4c28c89f8013"
-github.com/gohugoio/locales="v0.14.0"
-github.com/gohugoio/localescompressed="v1.0.1"
-github.com/golang-jwt/jwt/v4="v4.5.0"
-github.com/golang/groupcache="v0.0.0-20210331224755-41bb18bfe9da"
-github.com/golang/protobuf="v1.5.3"
-github.com/google/go-cmp="v0.5.9"
-github.com/google/s2a-go="v0.1.4"
-github.com/google/uuid="v1.3.0"
-github.com/google/wire="v0.5.0"
-github.com/googleapis/enterprise-certificate-proxy="v0.2.5"
-github.com/googleapis/gax-go/v2="v2.11.0"
-github.com/gorilla/websocket="v1.5.0"
-github.com/hairyhenderson/go-codeowners="v0.3.0"
-github.com/hashicorp/golang-lru/v2="v2.0.1"
-github.com/invopop/yaml="v0.1.0"
-github.com/jdkato/prose="v1.2.1"
-github.com/jmespath/go-jmespath="v0.4.0"
-github.com/josharian/intern="v1.0.0"
-github.com/kr/pretty="v0.3.1"
-github.com/kr/text="v0.2.0"
-github.com/kylelemons/godebug="v1.1.0"
-github.com/kyokomi/emoji/v2="v2.2.12"
-github.com/mailru/easyjson="v0.7.7"
-github.com/marekm4/color-extractor="v1.2.0"
-github.com/mattn/go-colorable="v0.1.13"
-github.com/mattn/go-isatty="v0.0.19"
-github.com/mattn/go-runewidth="v0.0.9"
-github.com/mitchellh/hashstructure="v1.1.0"
-github.com/mitchellh/mapstructure="v1.5.0"
-github.com/mohae/deepcopy="v0.0.0-20170929034955-c48cc78d4826"
-github.com/muesli/smartcrop="v0.3.0"
-github.com/niklasfasching/go-org="v1.7.0"
-github.com/olekukonko/tablewriter="v0.0.5"
-github.com/pelletier/go-toml/v2="v2.0.8"
-github.com/perimeterx/marshmallow="v1.1.4"
-github.com/pkg/browser="v0.0.0-20210911075715-681adbf594b8"
-github.com/pkg/errors="v0.9.1"
-github.com/rogpeppe/go-internal="v1.10.1-0.20230508101108-a4f6fabd84c5"
-github.com/russross/blackfriday/v2="v2.1.0"
-github.com/rwcarlsen/goexif="v0.0.0-20190401172101-9e8deecbddbd"
-github.com/sanity-io/litter="v1.5.5"
-github.com/sass/dart-sass/compiler="1.63.6"
-github.com/sass/dart-sass/implementation="1.63.6"
-github.com/sass/dart-sass/protocol="2.1.0"
-github.com/sass/libsass="3.6.5"
-github.com/spf13/afero="v1.9.5"
-github.com/spf13/cast="v1.5.1"
-github.com/spf13/cobra="v1.7.0"
-github.com/spf13/fsync="v0.9.0"
-github.com/spf13/pflag="v1.0.5"
-github.com/tdewolff/minify/v2="v2.12.7"
-github.com/tdewolff/parse/v2="v2.6.6"
-github.com/webmproject/libwebp="v1.2.4"
-github.com/yuin/goldmark="v1.5.4"
-go.opencensus.io="v0.24.0"
-go.uber.org/atomic="v1.11.0"
-go.uber.org/automaxprocs="v1.5.2"
-gocloud.dev="v0.30.0"
-golang.org/x/crypto="v0.10.0"
-golang.org/x/exp="v0.0.0-20230321023759-10a507213a29"
-golang.org/x/image="v0.8.0"
-golang.org/x/mod="v0.10.0"
-golang.org/x/net="v0.11.0"
-golang.org/x/oauth2="v0.9.0"
-golang.org/x/sync="v0.3.0"
-golang.org/x/sys="v0.9.0"
-golang.org/x/text="v0.10.0"
-golang.org/x/tools="v0.9.3"
-golang.org/x/xerrors="v0.0.0-20220907171357-04be3eba64a2"
-google.golang.org/api="v0.128.0"
-google.golang.org/appengine="v1.6.7"
-google.golang.org/genproto/googleapis/api="v0.0.0-20230530153820-e85fd2cbaebc"
-google.golang.org/genproto/googleapis/rpc="v0.0.0-20230530153820-e85fd2cbaebc"
-google.golang.org/genproto="v0.0.0-20230530153820-e85fd2cbaebc"
-google.golang.org/grpc="v1.56.0"
-google.golang.org/protobuf="v1.30.0"
-gopkg.in/yaml.v2="v2.4.0"
-gopkg.in/yaml.v3="v3.0.1"
-software.sslmate.com/src/go-pkcs12="v0.2.0"
-```
-</details>
+**许可证：MIT**

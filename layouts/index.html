@@ -2,8 +2,8 @@
 
 <div class="home-content">
   <section class="hero">
-    <h1>玉金等价：牧月记三部曲</h1>
-    <p class="hero-description">从史前文明到现代社会的演化规律，涵盖技术、地理、人文三个维度</p>
+    <h1>金玉平价论--天地人三部曲</h1>
+    <p class="hero-description">从宇宙物理到文明演化的跨学科研究，揭露文明证据的系统性清除真相</p>
   </section>
 
   <section class="books-grid">
@@ -63,25 +63,44 @@
         <span class="read-more">阅读全文 →</span>
       </div>
     </div>
+
+    <div class="book-card featured" onclick="window.location.href='/civilization-cleansing/'">
+      <div class="book-header">
+        <h2>🔥 第四卷</h2>
+        <span class="book-subtitle">文明的脑前叶切除术</span>
+      </div>
+      <div class="book-content">
+        <p>**震撼发现：90.8%的武装冲突集中在东半球，实为对"非白人文明多元起源"证据的系统性清除。**</p>
+        <ul class="book-topics">
+          <li>📍 喀布尔：2500年大夏密码湮灭</li>
+          <li>📍 巴格达：6000年苏美尔泥板失窃</li>
+          <li>📍 帕尔米拉：2000年石柱密码爆破</li>
+          <li>⚠️ 高危预警：利比亚、乌兹别克斯坦、格鲁吉亚</li>
+        </ul>
+      </div>
+      <div class="book-footer">
+        <span class="read-more">⚠️ 紧急阅读 →</span>
+      </div>
+    </div>
   </section>
 
   <section class="about">
     <h2>关于本系列</h2>
     <div class="about-content">
-      <p>"牧月记"三部曲通过"天地人"三个维度，重新审视人类文明的演化规律。从宇宙学的宏大视角，到地球科学的深层机制，再到人类文明的社会结构，本系列试图构建一个跨学科的知识体系。</p>
+      <p>《金玉平价论》通过"天地人"三个维度，重新审视人类文明的演化规律。**最重大发现：近50年来东半球90%以上的武装冲突，实为针对"非白人文明多元起源"证据的系统性清除——一场持续46年的"文明脑前叶切除术"。**</p>
       
       <div class="features">
         <div class="feature">
           <h3>🌌 跨学科视野</h3>
-          <p>融合天体物理、地质学、考古学、历史学等多个学科</p>
+          <p>融合天体物理、地质学、考古学、政治学、国际关系等多个学科</p>
         </div>
         <div class="feature">
-          <h3>🔬 理论创新</h3>
-          <p>提出引力雪橇、地球液压系统、白令海撞击等新理论</p>
+          <h3>🔬 文明绞杀学</h3>
+          <p>首创"文明证据定向清除"分析框架，揭示武装冲突与文明毁灭的深层关联</p>
         </div>
         <div class="feature">
-          <h3>🏛️ 文明重构</h3>
-          <p>重新解读亚特兰蒂斯、象雄文明等古文明之谜</p>
+          <h3>⚠️ 文明守护</h3>
+          <p>建立高危文明遗址预警机制，阻止"多元证据链"被继续摧毁</p>
         </div>
       </div>
     </div>
@@ -136,6 +155,32 @@
   .book-card:hover {
     transform: translateY(-4px);
     box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+  }
+
+  .book-card.featured {
+    background: linear-gradient(135deg, #fee2e2 0%, #fecaca 100%);
+    border: 2px solid #ef4444;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .book-card.featured::before {
+    content: "🚨 紧急发现";
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: #ef4444;
+    color: white;
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: bold;
+    animation: pulse 2s infinite;
+  }
+
+  @keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.7; }
   }
 
   .book-header {
